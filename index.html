@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Academic Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    header {
+    /* Prefer a smaller webp if available, then the optimized PNG, then the original as a last resort */
+    background-image: url("Image/sam-profile.webp"), url("Image/sam-profile.png"), url("Image/Samprofile image edit.png");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+      
+      background-attachment: scroll;
+    height: 320px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index:1;
+    background-color: #ffffff; 
+    position: relative;
+}
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.35); 
+      z-index: 0;
+    }
+
+    header h1, header p {
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2em;
+    }
+    nav {
+      background: #333;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #667eea;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    section h2 {
+      color: #667eea;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #667eea;
+      padding-bottom: 10px;
+    }
+    .cv-section {
+      background: #f4f4f4;
+      padding: 15px;
+      margin: 15px 0;
+      border-left: 4px solid #667eea;
+    }
+    .cv-section h3 {
+      color: #333;
+      margin-bottom: 5px;
+    }
+    .cv-section p {
+      margin: 5px 0;
+      color: #666;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+    .btn-download {
+      background: #667eea;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin: 10px 0;
+    }
+    .btn-download:hover {
+      background: #764ba2;
+    }
+    
+  </style>
+</head>
+<body>
+  <header >
+    <h1>AKINSEYE SAMUEL AYODEJI</h1>
+    <p>(MR)</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#cv">CV</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a driven researcher and scientist, deeply committed to the rigorous pursuit of knowledge and innovation within the life sciences. With an exceptionally strong academic record and a comprehensive foundation in biochemistry, my research endeavors focus on exploring novel scientific frontiers to contribute substantive advancements in medicine and biotechnology. My work is characterized by a disciplined commitment to learning, meticulous research methodologies, and the pursuit of evidence-based solutions aimed at enhancing human health and biological understanding.</p>
+    </section>
+
+    <section id="cv">
+      <h2>Curriculum Vitae</h2>
+      <a href="CV.pdf" class="btn-download" download="AKINSEYE_SAMUEL_CV.pdf">Download CV (PDF)</a>
+
+      <div class="cv-section">
+        <h3>Education</h3>
+        <p><strong>Institution</strong> - Federal University Oye-Ekiti (FUOYE) (2023)</p>
+        <p><strong>BSc</strong></p><p><strong></strong>Biochemistry</strong></p>
+        <P>......</P>
+      </div>
+
+      <div class="cv-section">
+        <h3>Experience</h3>
+        <p><strong>Graduate Asistant</strong> - Abia State University (ABSU) (Start - End)</p>
+        <p>Asist in practical sessions.</p>
+      </div>
+
+      <div class="cv-section">
+        <h3>Skills</h3>
+        <P>Lecturing/Teaching Skills</P>
+        <p>Hands on Desk (Basic Biotechnological Skills)</p>
+        <p>Basic Programming</p>
+        <p>Music(Singer, Keyboardlist, Guiterist)</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: akinseyesam@gmail.com</p>
+      <p>Phone: +(234)8138368751</p>
+      <p>linkedIn: </p>
+      <p>IG: </p>
+      <p>X: </p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 A.A. Samuel. All rights reserved.</p>
+  </footer>
+</body>
+</html>
